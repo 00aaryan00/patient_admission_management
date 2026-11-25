@@ -1,17 +1,19 @@
 # Patient Admission Management App
 
-A full-stack web application for hospital staff to manage admitted patients, built with **React.js**, **Python (FastAPI)**, and **SQLite**.
+A full-stack web application for hospital staff to manage admitted patients, built with **React.js**, **Python (FastAPI)**, and **PostgreSQL / SQLite**.
 
 ## Live Link
 
-- **Live App:** `<ADD_YOUR_LIVE_FRONTEND_URL_HERE>`
-- **API Docs (Swagger):** `<ADD_YOUR_LIVE_BACKEND_URL_HERE>/docs`
+- **Live App:** `https://patient-admission-management-4mvt.onrender.com/`
+- **API Docs (Swagger):** `https://patient-admission-management-backend.onrender.com/docs`
+
+> **Note:** The backend is hosted on Render's free tier; the first request after inactivity may take ~30–50 seconds to wake up.
 
 ## Tech Stack
 
 - **Frontend:** React.js (Vite), CSS (responsive layout for mobile, tablet, and desktop)
-- **Backend:** Python 3.10+, FastAPI, Pydantic v2
-- **Database:** SQLite (`backend/patients.db` — persists data across server restarts)
+- **Backend:** Python 3.12, FastAPI, Pydantic v2
+- **Database:** PostgreSQL (production on Render via `DATABASE_URL`) and SQLite (`backend/patients.db` locally) — data persists across server restarts
 
 ## Features
 
@@ -63,4 +65,11 @@ Frontend runs at `http://localhost:5173`.
 
 ## Screenshots
 
-> Add screenshots of the desktop and mobile views here before submitting.
+### Dashboard & Patient List
+![Dashboard](screenshots/dashboard.png)
+
+### Search & Filter
+![Search and Filter](screenshots/search-filter.png)
+
+### Add Patient & Validation
+![Add Patient Validation](screenshots/add-validation.png)
